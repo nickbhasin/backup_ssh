@@ -155,6 +155,7 @@ redundancy
 !
 !
 interface GigabitEthernet1
+ description iron man
  ip address dhcp
  negotiation auto
 !
