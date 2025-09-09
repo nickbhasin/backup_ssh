@@ -1,0 +1,62 @@
+branch_name: ansible-testhost-2025-09-09T174214.161037+0530
+branches:
+- main
+- main
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: https://github.com/nickbhasin/backup_ssh.git'
+name: backup_ssh
+output:
+-   command: git -C /tmp/tmp5on7nzx9 clone --depth=1 --progress https://github.com/nickbhasin/backup_ssh.git
+    env: ''
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'backup_ssh'...
+    - 'remote: Enumerating objects: 9, done.        '
+    - 'remote: Counting objects:  11% (1/9)        '
+    - 'remote: Counting objects:  22% (2/9)        '
+    - 'remote: Counting objects:  33% (3/9)        '
+    - 'remote: Counting objects:  44% (4/9)        '
+    - 'remote: Counting objects:  55% (5/9)        '
+    - 'remote: Counting objects:  66% (6/9)        '
+    - 'remote: Counting objects:  77% (7/9)        '
+    - 'remote: Counting objects:  88% (8/9)        '
+    - 'remote: Counting objects: 100% (9/9)        '
+    - 'remote: Counting objects: 100% (9/9), done.        '
+    - 'remote: Compressing objects:  16% (1/6)        '
+    - 'remote: Compressing objects:  33% (2/6)        '
+    - 'remote: Compressing objects:  50% (3/6)        '
+    - 'remote: Compressing objects:  66% (4/6)        '
+    - 'remote: Compressing objects:  83% (5/6)        '
+    - 'remote: Compressing objects: 100% (6/6)        '
+    - 'remote: Compressing objects: 100% (6/6), done.        '
+    - 'remote: Total 9 (delta 0), reused 4 (delta 0), pack-reused 0 (from 0)        '
+    - 'Receiving objects:  11% (1/9)'
+    - 'Receiving objects:  22% (2/9)'
+    - 'Receiving objects:  33% (3/9)'
+    - 'Receiving objects:  44% (4/9)'
+    - 'Receiving objects:  55% (5/9)'
+    - 'Receiving objects:  66% (6/9)'
+    - 'Receiving objects:  77% (7/9)'
+    - 'Receiving objects:  88% (8/9)'
+    - 'Receiving objects: 100% (9/9)'
+    - 'Receiving objects: 100% (9/9), 4.65 KiB | 4.65 MiB/s, done.'
+    stdout_lines: []
+-   command: git -C /tmp/tmp5on7nzx9/backup_ssh branch -a
+    env: ''
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/main'
+-   command: git -C /tmp/tmp5on7nzx9/backup_ssh checkout -b ansible-testhost-2025-09-09T174214.161037+0530
+        origin/HEAD
+    env: ''
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-testhost-2025-09-09T174214.161037+0530'
+    stdout_lines:
+    - branch 'ansible-testhost-2025-09-09T174214.161037+0530' set up to track 'origin/main'.
+path: /tmp/tmp5on7nzx9/backup_ssh
